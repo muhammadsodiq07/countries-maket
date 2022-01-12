@@ -5,13 +5,179 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Countries</title>
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
   <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" href="css/col.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+  <header>
+    <section class="site-section">
+      <div class="container">
+        <div class="row middle between">
+          <h2 class="logo">Where in the world?</h2>
+          <button class="dark-mode" id="modeBtn">Dark Mode</button>
+        </div>
+      </div>
+    </section>
+  </header>
+  <div class="site-main">
+    <div class="container">
+      <div class="row middle between">
+        <div class="input-search row middle">
+          <i class='bx bx-search-alt-2'></i>
+          <input type="text" name="search" placeholder="Search for a country…">
+        </div>
+        <div class="select row middle">
+          <select class="select-op row middle" name="Filter by Region" id="Filter by Region">
+            <option value="">Filter by Region</option>
+            <option value="">Africa</option>
+            <option value="">America</option>
+            <option value="">Asia</option>
+            <option value="">Europe</option>
+            <option value="">Oceania</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="countries">
+    <div class="container">
+      <div class="contries-info">
+        <ul class="country-ul row between middle">
+          <li class="country-list">
+            <a target="_blank" class="flag" href="germany.html"><img src="img/germany.png" alt="" width="264"
+                height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">Germany</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 81,770,900</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Europe</span>
+              </p>
+              <p class="flag-cap color-f">Capita
+                <span class="last op-1">: Berlin</span>
+              </p>
+            </div>
+          </li>
+          <li class="country-list">
+            <a class="flag" href="#"><img src="img/america.png" alt="" width="264" height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">United States of America</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 323,947,000</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Americas</span>
+              </p>
+              <p class="flag-cap color-f">Capital
+                <span class="last op-1">: Washington, D.C.</span>
+              </p>
+            </div>
+          </li>
+          <li class="country-list">
+            <a class="flag" href="#"><img src="img/brazil.png" alt="" width="264" height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">Brazil</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 206,135,893</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Americas</span>
+              </p>
+              <p class="flag-cap color-f">Capital
+                <span class="last op-1">: Brasília</span>
+              </p>
+            </div>
+          </li>
+          <li class="country-list">
+            <a class="flag" href="#"><img src="img/Iceland.png" alt="" width="264" height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">Iceland</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 334,300</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Europe</span>
+              </p>
+              <p class="flag-cap color-f">Capital
+                <span class="last op-1">: Reykjavík</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="city">
+        <ul class="country-ul row between middle">
+          <li class="country-list">
+            <a class="flag" href="#"><img src="img/afganistan.png" alt="" width="264" height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">Afghanistan</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 27,657,145</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Asia</span>
+              </p>
+              <p class="flag-cap color-f">Capita
+                <span class="last op-1">: Kabul</span>
+              </p>
+            </div>
+          </li>
+          <li class="country-list">
+            <a class="flag" href="#"><img src="img/island.png" alt="" width="264" height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">Åland Islands</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 28,875</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Europe</span>
+              </p>
+              <p class="flag-cap color-f">Capital
+                <span class="last op-1">: Mariehamn</span>
+              </p>
+            </div>
+          </li>
+          <li class="country-list">
+            <a class="flag" href="#"><img src="img/albamia.png" alt="" width="264" height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">Albania</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 2,886,026</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Europe</span>
+              </p>
+              <p class="flag-cap color-f">Capital
+                <span class="last op-1">: Tirana</span>
+              </p>
+            </div>
+          </li>
+          <li class="country-list">
+            <a class="flag" href="#"><img src="img/algeria.png" alt="" width="264" height="160"></a>
+            <div class="list-itme">
+              <h4 class="flag-title">Algeria</h4>
+              <p class="flag-text color-f">Population
+                <span class="flag-num op-1">: 40,400,000</span>
+              </p>
+              <p class="flag-p color-f">Region
+                <span class="eur op-1">: Africa</span>
+              </p>
+              <p class="flag-cap color-f">Capital
+                <span class="last op-1">: Algiers</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <script src="js/main.js"></script>
 </body>
